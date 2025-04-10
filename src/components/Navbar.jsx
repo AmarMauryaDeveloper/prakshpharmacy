@@ -168,6 +168,13 @@ const Navbar = ({ setData, cart }) => {
             : "translate-y-full opacity-0 pointer-events-none"
         } transition-all duration-300 ease-in-out fixed z-10 inset-x-0 bottom-0 bg-maincolor sm:hidden`}
       >
+        {" "}
+        <Link
+          to={"/showblogs"}
+          className="text-xl font-bold flex justify-center text-white"
+        >
+          Blog
+        </Link>
         <div className="flex flex-col items-center p-4">
           {!user ? (
             <>
